@@ -1,0 +1,28 @@
+Liste des fonctions scratch
+pour kubot :
+
+Initialisation
+
+Mouvements :
+Home #retour a 0
+Acvancer
+Reculer
+tourner
+Soulever un pied
+Pointe des pieds
+Danser
+Se pencher
+
+ecrire fonction mouvement bras
+Lever le bras
+
+Capteurs :
+Capter la distance avec US
+
+Buetooth :
+recevoir/envoyer info bluetooth -> plus tard
+
+Signaux :
+MAtrice LED afficher -> plus tard
+chanter une chanson
+créer une chanson donc un note

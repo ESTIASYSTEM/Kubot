@@ -1,0 +1,315 @@
+{	"extensionName": "Kubot_Scratch",
+	"description": "Vue Scratch des fonctions Kubot",
+	"version": "1.1",
+	"author": "Flavien",
+	"homepage": "http://estiasystem.estia.fr/",
+	"sort":0,
+	"javascriptURL":"js/Kubot_Scratch.js",
+  "firmware":"1.0",
+  "extensionPort":0,
+	"blockSpecs": [
+		[
+			"h",
+			"Programme Kubot",
+			"runArduino",
+		],
+
+		[
+			"w",
+			"initialisation Kubot",
+			"initialisation Kubot",
+			{
+				"inc": "#include \"Kubot.hpp\"\n#include \"Kubot_Sounds.hpp\"",
+				"def": "#define PIN_YR 3\n#define PIN_YL 2\n#define PIN_RR 5\n#define PIN_RL 4\n#define PIN_RA 7\n#define PIN_LA 6\n\nKubot Kubo;\n\nOscillator rightArm;\nOscillator leftArm;\nString position = \" \";\n\nint tempo=190;\n\nint T(float nbTemps){\n  float duree;\n	duree = nbTemps*60000/tempo;\n	return duree;\n}",
+				"setup": "Kubo.initialize(PIN_YL,PIN_YR,PIN_RL,PIN_RR);\nrightArm.attach(PIN_RA);\nleftArm.attach(PIN_LA);\nrightArm.SetPosition(90);\nleftArm.SetPosition(90);\nKubo.home();\ndelay(50);\n\n",
+				"work": "",
+				"loop": "",
+			}
+		],
+
+		[
+			"w",
+			"repos",
+			"repos",
+			{
+				"inc": "",
+				"def": "",
+				"setup": "",
+				"work": "Kubo.home();\ndelay(50);\n\n",
+				"loop": "",
+			}
+		],
+
+		[
+			"w",
+			"avancer : nombre de pas %n vitesse %d.vitesses direction : %d.direction",
+			"avancer",
+			"5",
+			"moyen",
+			"avant",
+			{
+				"inc": "",
+				"def": "",
+				"setup": "",
+				"work": "Kubo.walk({0},{1},{2});\ndelay(50);\n\n",
+				"loop": "",
+			}
+		],
+
+		[
+			"w",
+			"tourner : sens %d.sens",
+			"tourner",
+			"gauche",
+			{
+				"inc": "",
+				"def": "",
+				"setup": "",
+				"work": "Kubo.walk(4,1000,{0});\ndelay(50);\n\n",
+				"loop": "",
+			}
+		],
+
+		[
+			"w",
+			"se balancer : repetitions %n",
+			"se balancer",
+			"2",
+			{
+				"inc": "",
+				"def": "",
+				"setup": "",
+				"work": "Kubo.swing({0},1400,50);\ndelay(50);\n\n",
+				"loop": "",
+			}
+		],
+
+		[
+			"w",
+			"remuer pied: repetitions %n  vitesse %d.vitesses  jambe : %d.sens",
+			"remuer pied",
+			"2",
+			"normal",
+			"droite",
+			{
+				"inc": "",
+				"def": "",
+				"setup": "",
+				"work": "Kubo.shakeLeg({0},{1},{2});\ndelay(50);\n\n",
+				"loop": "",
+			}
+		],
+
+		[
+			"w",
+			"pointe des pied: repetitions %n",
+			"pointe des pied",
+			"2",
+			{
+				"inc": "",
+				"def": "",
+				"setup": "",
+				"work": "Kubo.updown({0},1000,20);\ndelay(50);\n\n",
+				"loop": "",
+			}
+		],
+
+		[
+			"w",
+			"danser: repetitions %n",
+			"danser",
+			"2",
+			{
+				"inc": "",
+				"def": "",
+				"setup": "",
+				"work": "Kubo.tiptoeSwing({0},900,20);\ndelay(50);\n\n",
+				"loop": "",
+			}
+		],
+
+		[
+			"w",
+			"guige: repetitions %n",
+			"guige",
+			"2",
+			{
+				"inc": "",
+				"def": "",
+				"setup": "",
+				"work": "Kubo.jitter({0},500,20);\ndelay(50);\n\n",
+				"loop": "",
+			}
+		],
+
+		[
+			"w",
+			"moonwalk: nombre de pas %n vitesse %d.vitesses sens %d.sens",
+			"moonwalk",
+			"5",
+			"moyen",
+			"sens",
+			{
+				"inc": "",
+				"def": "",
+				"setup": "",
+				"work": "Kubo.moonwalker({0},{1},20,{3});\ndelay(50);\n\n",
+				"loop": "",
+			}
+		],
+
+		[
+			"r",
+			"Scan distance ",
+			"Ping",
+			{
+				"inc": "",
+				"def": "",
+				"setup": "",
+				"work": "Kubo.getDistance()",
+				"loop": "",
+			}
+		],
+
+		[
+			"w",
+			"note: jouer note %d.note rythme %d.rythmes silence %d.rythmes",
+			"note",
+			"NOTE_Do4",
+			"noire",
+			"aucun",
+			{
+				"inc": "",
+				"def": "",
+				"setup": "",
+				"work": "Kubo._tone({0},T({1}),T({2}));\ndelay(50);\n\n",
+				"loop": "",
+			}
+		],
+
+		[
+			"w",
+			"glissando: note debut %d.note note fin %d.note duree %d",
+			"glissando",
+			"NOTE_Do4",
+			"NOTE_Do5",
+			"1000",
+			{
+				"inc": "",
+				"def": "",
+				"setup": "",
+				"work": "Kubo.glissando({0},{1},{2});\n",
+				"loop": "",
+			}
+		],
+
+		[
+			"w",
+			"tempo = %n",
+			"tempo",
+			"190",
+			{
+				"inc": "",
+				"def": "",
+				"setup": "",
+				"work": "tempo={0};\n",
+				"loop": "",
+			}
+		],
+
+		[
+			"w",
+			"Bras bouger : position %m.position cote %d.sens2",
+			"Arm",
+			"milieu",
+			"Droite",
+			{
+				"inc": "",
+				"def": "",
+				"setup": "",
+				"work": "position = {0};\n  if({1}){\n					if (position == \"haut\")\n              leftArm.SetPosition(40);\n           if (position ==  \"milieu\")\n              leftArm.SetPosition(90);\n           if (position == \"bas\")\n              leftArm.SetPosition(180);\n          }\n          else {\n            if (position == \"haut\")\n               rightArm.SetPosition(180);\n            if (position == \"milieu\")\n               rightArm.SetPosition(90);\n            if (position == \"bas\")\n               rightArm.SetPosition(0);\n          }\n",
+				"loop": "",
+			}
+		],
+
+	],
+
+	"menus": {
+		"digital": ["HIGH","LOW"],
+		"vitesses": ["tres lent","lent","moyen","rapide","tres rapide"],
+		"direction": ["avant","arriere"],
+		"sens" : ["gauche","droite"],
+		"sens2" : ["Gauche","Droite"],
+		"position" : ["haut","milieu","bas"],
+		"rythmes" : ["auncun","triple de croche","quart de croche","croche","croche pointée","noire","noire pointee","blanche","blanche pointee","ronde"],
+		"note" : ["NOTE_Do4","NOTE_Dod4","NOTE_Re4","NOTE_Red4","NOTE_Mi4","NOTE_Fa4","NOTE_Fad4","NOTE_Sol4","NOTE_Sold4","NOTE_La4","NOTE_Lad4","NOTE_Si4","NOTE_Do5","NOTE_Dod5","NOTE_Re5","NOTE_Red5","NOTE_Mi5","NOTE_Fa5","NOTE_Fad5","NOTE_Sol5","NOTE_Sold5","NOTE_La5","NOTE_Lad5","NOTE_Si5","NOTE_Do6","NOTE_Dod6","NOTE_Re6","NOTE_Red6","NOTE_Mi6","NOTE_Fa6","NOTE_Fad6","NOTE_Sol6","NOTE_Sold6","NOTE_La6","NOTE_Lad6","NOTE_Si6"],
+	},
+
+	"values":{
+		"haut" : "haut",
+		"milieu": "milieu",
+		"bas": "bas",
+		"Gauche" : 1,
+		"Droite" : 0,
+		"HIGH":1,
+		"LOW":0,
+		"tres rapide" :500,
+		"rapide" : 800,
+		"moyen" : 1000,
+		"lent" : 1300,
+		"tres lent" : 1700,
+		"avant" : 1,
+		"arriere" : -1,
+		"gauche" : 1,
+		"droite" : -1,
+		"triple de croche" : 0.125,
+		"quart de croche" : 0.25,
+		"croche" :0.5,
+		"noire pointee" : 0.75,
+		"noire" : 1,
+		"noire pointee" : 1.5,
+		"blanche" : 2,
+		"noire pointee" :  3,
+		"ronde" : 4,
+		"NOTE_Do4" : 523,
+		"NOTE_Dod4" : 554,
+		"NOTE_Re4" : 587,
+		"NOTE_Red4" : 622,
+		"NOTE_Mi4" : 659,
+		"NOTE_Fa4" : 698.5,
+		"NOTE_Fad4" : 740,
+		"NOTE_Sol4": 784,
+		"NOTE_Sold4" : 831,
+		"NOTE_La4" : 880,
+		"NOTE_Lad4" : 932,
+		"NOTE_Si4" : 988,
+		"NOTE_Do5" : 1046.5,
+		"NOTE_Dod5" : 1109,
+		"NOTE_Re5" : 1175,
+		"NOTE_Red5" : 1244.5,
+		"NOTE_Mi5" : 1318.5,
+		"NOTE_Fa5" : 1397,
+		"NOTE_Fad5" :	1480,
+		"NOTE_Sol5" : 1568,
+		"NOTE_Sold5" : 1661,
+		"NOTE_La5" : 1760,
+		"NOTE_Lad5" : 1865,
+		"NOTE_Si5": 1975,
+		"NOTE_Do6" : 2093,
+		"NOTE_Dod6" : 2217,
+		"NOTE_Re6" : 2349,
+		"NOTE_Red6" : 2489,
+		"NOTE_Mi6" : 2637,
+		"NOTE_Fa6" : 2794,
+		"NOTE_Fad6" : 2960,
+		"NOTE_Sol6" : 3136,
+		"NOTE_Sold6" : 3322,
+		"NOTE_La6" : 3520,
+		"NOTE_Lad6" : 3729,
+		"NOTE_Si6" : 3951,
+		"aucun" : 0,
+	},
+
+	"translators":{
+	}
+}
