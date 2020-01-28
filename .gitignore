@@ -34,3 +34,4 @@
 # IDE
 *.tags1
 *.tags
+.vscode/
