@@ -11,7 +11,7 @@ Si votre Arduino est non officiel, il peut être impossible d'y accèder lorsque
 
 ### Configurer l'IDE Arduino
 
-Pour utiliser le Kubot, il faut installer la bibliothèque sur votre ordinateur, c'est à dire copier le contenu du dossier "Librairies" de ce dépot dans le dossier "D:\Documents\ **VotreNomUtilisateur** \Documents\Arduino\libraries" (accès via mes documents sur Windows). Les librairies seront alors accessible depuis l'IDE Arduino.
+Pour utiliser le Kubot, il faut installer la bibliothèque sur votre ordinateur, c'est à dire copier le contenu du dossier "Librairies" de ce dépot dans le dossier "D:\Documents\\**VotreNomUtilisateur**\Documents\Arduino\libraries" (accès via mes documents sur Windows). Les librairies seront alors accessible depuis l'IDE Arduino.
 
 ### Configurer mBlock
 Il est recommandé d'utiliser la version 3.4 de mBlock.
@@ -19,25 +19,29 @@ Il est recommandé d'utiliser la version 3.4 de mBlock.
 
 Maintenant, il faut installer l'extension Kubot_Scratch.
 
-- Sur le clavier, appuyer sur : touche windows + touche R
+* Sur le clavier, appuyer sur : touche windows + touche R
 
-![](media/Execute.JPG)
+![Fenêtre executer](media/Execute.JPG)
 
 Une fenêtre comme cela doit s'ouvrir.
-- Saisir : %appdata%
-- Dans l'explorateur de fichier qui s'est ouvert, naviguer vers le dossier **libraries** :
+* Saisir : %appdata%
+* Dans l'explorateur de fichier qui s'est ouvert, naviguer vers le dossier **libraries** :
 
 ```Roaming\com.makeblock.Scratch3.4.12\Local Store\mBlock\libraries```
-- Copier le dossier **Kubot_Scratch** de ce depot GitHub dans le dossier **libraries** de mBlock.
+* Copier le dossier **Kubot_Scratch** de ce depot GitHub dans le dossier **libraries** de mBlock.
 ### Utiliser mBlock
-- On vérifie que **Kubot_Scratch** s'est bien installé. On va chercher dans l'onglet *Choix des extensions*, puis fenêtre *Gérer les extensions*, cliquer sur l'onglet *Installées*. On voit l'extension en verte dans l'image.
-![](media/GererLesExtensionsV3.4.JPG)
-- Maintenant on active l'extension ici (entouré en rouge)
-![](media/ActivationKubot_Scratch.JPG)
-- Enfin on active le mode Arduino (entouré en rouge)
-![](media/ActivationModeArduino.JPG)
+* On vérifie que **Kubot_Scratch** s'est bien installé. On va chercher dans l'onglet *Choix des extensions*, puis fenêtre *Gérer les extensions*, cliquer sur l'onglet *Installées*. On voit l'extension en verte dans l'image.
 
-Voici un exemple de programme pouvant être réalisé. Les blocs Programme Kubot et Initialisation Kubot sont nécessaires. Les blocs sont rangés par type (contrôle en jaune, opérateurs en vert, pilotage en bleu). La forme des blocs doit aussi être respecté, par exemple le scan distance doit être mis dans un bloc opérateur en vert.
+![Fenêtre gérer les extensions](media/GererLesExtensionsV3.4.JPG)
+* Maintenant on active l'extension ici (entouré en rouge)
+
+![Activation extension Kubot](media/ActivationKubot_Scratch.JPG)
+* Enfin on active le mode Arduino (entouré en rouge)
+
+![Activation mode Arduino](media/ActivationModeArduino.JPG)
+
+Voici un exemple de programme pouvant être réalisé. Les blocs Programme Kubot et Initialisation Kubot sont nécessaires. Les blocs sont rangés par type (contrôle en jaune, opérateurs en vert, pilotage en bleu). La forme des blocs doit être respecté, par exemple le scan distance doit être mis dans un bloc opérateur en vert (forme ovale).
+
 ![Exemple de programme mBlock](media/ExempleProgrammemBlock.JPG)
 
 
@@ -47,15 +51,15 @@ L’interface graphique peut être travaillé via [ce site du MIT](http://appinv
 Ce programme a été écrit par Florent Paulin.
 
 ## Kubot_Scratch
-Scratch MkBlock V3
+**Utilisable seulement sous mBlock V3**
 
-Bibliothèque du logiciel MkBlock V3 développé pour l'animation en partenariat avec la médiathèque de Biarritz, 
+Bibliothèque du logiciel mBlock V3 développé pour l'animation en partenariat avec la médiathèque de Biarritz. 
 Mise en place par Flavien Dumas
 
 Liste des fonctions scratch pour Kubot :
 * Initialisation
 * Mouvements :
-    * Home (retour à 0)
+    * Home (retour en position repos)
     * Avancer
     * Reculer
     * Tourner
@@ -65,33 +69,33 @@ Liste des fonctions scratch pour Kubot :
     * Se pencher
 
 TODO
-- [ ] fonction mouvement bras
-- [ ] Lever le bras
+* [ ] fonction mouvement bras
+* [ ] Lever le bras
 
 Capteurs :
 Capter la distance avec US
 
 Bluetooth :
-- [ ] TODO : recevoir/envoyer info bluetooth
+* [ ] TODO recevoir/envoyer info bluetooth
 
 Signaux :
-- [ ] TODO affichage Matrice LED
+* [ ] TODO affichage Matrice LED
 * chanter une chanson
-* créer une chanson donc une note
+* créer une chanson avec des notes
 
 
 ## Librairies
 Librairie des robots interactifs Kubot
 
-Développé par Hynek Vignon et Raphaël Ollando
+Développées par Hynek Vignon et Raphaël Ollando
 
 ## Programmes
 Programmes clés en main à mettre sur la carte Arduino du Kubot
 
 ## TODO
-- [X] faire la fusion des codes de bibliothèque
-- [ ] faire une notice pour l'application Bluetooth
+* [X] faire la fusion des codes de bibliothèque
+* [ ] faire une notice pour l'application Bluetooth
 
 # License
-- en: All codes specified with a licence in the header or in a file  are under there own conditions, others codes is under GNU GPL.
-- fr: Tous les codes spécifiés avec une licence dans l'en-tête ou dans un fichier sont soumis à leurs propres conditions, les autres codes sont sous licence GNU GPL.
+* en: All codes specified with a licence in the header or in a file  are under there own conditions, others codes is under GNU GPL.
+* fr: Tous les codes spécifiés avec une licence dans l'en-tête ou dans un fichier sont soumis à leurs propres conditions, les autres codes sont sous licence GNU GPL.
