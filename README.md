@@ -42,7 +42,7 @@ Une fenêtre comme cela doit s'ouvrir.
 
 Voici un exemple de programme pouvant être réalisé. Les blocs Programme Kubot et Initialisation Kubot sont nécessaires. Les blocs sont rangés par type (contrôle en jaune, opérateurs en vert, pilotage en bleu). La forme des blocs doit être respecté, par exemple le scan distance doit être mis dans un bloc opérateur en vert (forme ovale).
 
-![](media/ExempleProgrammemBlock.jpg)
+![](media/ExempleProgrammeBlock.jpg)
 
 
 ## Kubot_Application_Mobile
