@@ -21,7 +21,7 @@ Maintenant, il faut installer l'extension Kubot_Scratch.
 
 * Sur le clavier, appuyer sur : touche windows + touche R
 
-![Fenêtre executer](media/Execute.JPG)
+![](media/Execute.jpg)
 
 Une fenêtre comme cela doit s'ouvrir.
 * Saisir : %appdata%
@@ -32,17 +32,17 @@ Une fenêtre comme cela doit s'ouvrir.
 ### Utiliser mBlock
 * On vérifie que **Kubot_Scratch** s'est bien installé. On va chercher dans l'onglet *Choix des extensions*, puis fenêtre *Gérer les extensions*, cliquer sur l'onglet *Installées*. On voit l'extension en verte dans l'image.
 
-![Fenêtre gérer les extensions](media/GererLesExtensionsV3.4.JPG)
+![](media/GererLesExtensionsV3.4.jpg)
 * Maintenant on active l'extension ici (entouré en rouge)
 
-![Activation extension Kubot](media/ActivationKubot_Scratch.JPG)
+![](media/ActivationKubot_Scratch.jpg)
 * Enfin on active le mode Arduino (entouré en rouge)
 
-![Activation mode Arduino](media/ActivationModeArduino.JPG)
+![](media/ActivationModeArduino.jpg)
 
 Voici un exemple de programme pouvant être réalisé. Les blocs Programme Kubot et Initialisation Kubot sont nécessaires. Les blocs sont rangés par type (contrôle en jaune, opérateurs en vert, pilotage en bleu). La forme des blocs doit être respecté, par exemple le scan distance doit être mis dans un bloc opérateur en vert (forme ovale).
 
-![Exemple de programme mBlock](media/ExempleProgrammemBlock.JPG)
+![](media/ExempleProgrammemBlock.jpg)
 
 
 ## Kubot_Application_Mobile
