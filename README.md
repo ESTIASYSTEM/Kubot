@@ -14,15 +14,32 @@ Si votre Arduino est non officiel, il peut être impossible d'y accèder lorsque
 Pour utiliser le Kubot, il faut installer la bibliothèque sur votre ordinateur, c'est à dire copier le contenu du dossier "Librairies" de ce dépot dans le dossier "D:\Documents\ **VotreNomUtilisateur** \Documents\Arduino\libraries" (accès via mes documents sur Windows). Les librairies seront alors accessible depuis l'IDE Arduino.
 
 ### Configurer mBlock
-Il est recommandé d'utiliser la version 3.4 de mBlockil peut y avoir des bugs avec les versions plus avancées.
-télécharger et installer mBlock [Télécharger mBlock v3.4. ici](https://dl.makeblock.com/mblock3/mBlock_win_V3.4.12.exe).
-installer l'extension Kubot_Scratch
+Il est recommandé d'utiliser la version 3.4 de mBlock.
+[Télécharger mBlock v3.4. ici](https://dl.makeblock.com/mblock3/mBlock_win_V3.4.12.exe).
+
+Maintenant, il faut installer l'extension Kubot_Scratch.
+
 - Sur le clavier, appuyer sur : touche windows + touche R
 
 ![](media/Execute.JPG)
+
+Une fenêtre comme cela doit s'ouvrir.
 - Saisir : %appdata%
-- Dans l'explorateur de fichier qui s'est ouvert, naviguer vers le dossier **libraries** : Roaming\com.makeblock.Scratch **votreVersionMBlock**\Local Store\mBlock\libraries
-- copier le dossier **Kubot_Scratch** de ce depot GitHub dans le dossier libraries de mBlock.
+- Dans l'explorateur de fichier qui s'est ouvert, naviguer vers le dossier **libraries** :
+
+```Roaming\com.makeblock.Scratch3.4.12\Local Store\mBlock\libraries```
+- Copier le dossier **Kubot_Scratch** de ce depot GitHub dans le dossier **libraries** de mBlock.
+### Utiliser mBlock
+- On vérifie que **Kubot_Scratch** s'est bien installé. On va chercher dans l'onglet *Choix des extensions*, puis fenêtre *Gérer les extensions*, cliquer sur l'onglet *Installées*. On voit l'extension en verte dans l'image.
+![](media/GererLesExtensionsV3.4.JPG)
+- Maintenant on active l'extension ici (entouré en rouge)
+![](media/ActivationKubot_Scratch.JPG)
+- Enfin on active le mode Arduino (entouré en rouge)
+![](media/ActivationModeArduino.JPG)
+
+Voici un exemple de programme pouvant être réalisé. Les blocs Programme Kubot et Initialisation Kubot sont nécessaires. Les blocs sont rangés par type (contrôle en jaune, opérateurs en vert, pilotage en bleu). La forme des blocs doit aussi être respecté, par exemple le scan distance doit être mis dans un bloc opérateur en vert.
+![Exemple de programme mBlock](media/ExempleProgrammemBlock.JPG)
+
 
 ## Kubot_Application_Mobile
 Code de l'application pour mobile Android développé pendant le cours de Système Mobile Communicant.
@@ -31,6 +48,7 @@ Ce programme a été écrit par Florent Paulin.
 
 ## Kubot_Scratch
 Scratch MkBlock V3
+
 Bibliothèque du logiciel MkBlock V3 développé pour l'animation en partenariat avec la médiathèque de Biarritz, 
 Mise en place par Flavien Dumas
 
@@ -59,7 +77,7 @@ Bluetooth :
 Signaux :
 - [ ] TODO affichage Matrice LED
 * chanter une chanson
-* créer une chanson donc un note
+* créer une chanson donc une note
 
 
 ## Librairies
