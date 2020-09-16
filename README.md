@@ -1,12 +1,10 @@
 # Kubot
 Dépôt pour tous les codes concernant le Kubot.
 
-Inspiré par le robot [Otto DIY](https://github.com/OttoDIY).
-
 ![Un petit Kubot](media/Kubot.jpg)
 
 ## Démarrage/ getting started
-### Installation arduino non officiel
+### Installation carte arduino non officiel
 Si votre Arduino est non officiel, il peut être impossible d'y accèder lorsque vous la branchez votre ordinateur. Pour cela il faut installer le driver CH341SER-EXE.zip présent dans le dossier **Programmes**.
 
 ### Configurer l'IDE Arduino
@@ -96,6 +94,10 @@ Programmes clés en main à mettre sur la carte Arduino du Kubot
 * [X] faire la fusion des codes de bibliothèque
 * [ ] faire une notice pour l'application Bluetooth
 
+## Améliorations futur
+- [ ] chercher un nouveau micro controleur de même taille que l'arduino nano avec plus de mémoire (ou carte sd, module eeprom), plus de puissance (arm)
+
 # License
-* en: All codes specified with a licence in the header or in a file  are under there own conditions, others codes is under GNU GPL.
+Thanks to [Otto DIY](https://github.com/OttoDIY) project.
+* en: All codes specified with a licence in the header or in a file  are under there own conditions, others codes are under GNU GPL.
 * fr: Tous les codes spécifiés avec une licence dans l'en-tête ou dans un fichier sont soumis à leurs propres conditions, les autres codes sont sous licence GNU GPL.
