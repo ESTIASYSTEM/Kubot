@@ -7,12 +7,12 @@ Dépôt pour tous les codes concernant le Kubot.
 - Les instructions d'utilisations et toutes les informations projet du Kubot se trouve sur le [wiki](https://github.com/ESTIASYSTEM/Kubot/wiki)
 - les tickets rapportant les bugs, demandes d'améliorations, demandes d'informations... (cf labels disponibles) peuvent être ouverts dans les [issues](https://github.com/ESTIASYSTEM/Kubot/issues)
 - [L'équipe GitHub](https://github.com/orgs/ESTIASYSTEM/teams/kubot) permet de regrouper toutes les personnes, tous les dépots relatifs au projet, les kanbans et d'avoir un "forum" de discussions.
-- [L'équipe Teams](https://teams.microsoft.com/l/channel/19%3a2c6bae501a31457f922b68a2c59b31fa%40thread.skype/Kubot?groupId=51a4f0eb-8336-4366-a786-f89c1c31cb50&tenantId=370d21bc-952a-493e-a2c9-13cfa1e63520) pour avoir un channel de conversation accessible à tous les adhérents d'ESTIA SYSTEM dans l'école.
+- Le canal de discussion Kubot pour avoir un channel de conversation accessible à tous les adhérents d'ESTIA SYSTEM.
 
 ## Kubot_Application_Mobile
 Code de l'application pour mobile Android développé pendant le cours de Système Mobile Communicant.
 L’interface graphique peut être travaillé via [ce site du MIT](http://appinventor.mit.edu/explore/#).
-Ce programme a été écrit par Florent Paulin.
+Ce programme a été écrit par Florent Paulin @FlorentUAV.
 
 ## Kubot_Scratch
 **Utilisable seulement sous mBlock V3**
@@ -64,6 +64,13 @@ Programmes clés en main à mettre sur la carte Arduino du Kubot
 chercher un nouveau micro controleur de même taille que l'arduino nano avec plus de mémoire (ou carte sd, module eeprom), plus de puissance (arm)
 - [ ] Utiliser le [Nano 33 BLE](https://store.arduino.cc/arduino-nano-33-ble) -> plus de mémoire (1Mo), de puissance de calcul, connectivité intégré (ATTENTION: passage de 5V à 3,3 V sur le circuit logique)
 - [ ] Utiliser le [Nano 33 BLE Sense](https://store.arduino.cc/arduino-nano-33-ble-sense) -> comme le BLE simple, avec en plus des capteurs intégrés comme l'IMU. Permet de faire du machine learning (reconnaissance de mouvement, de couleurs)
+
+# Contributeurs
+- [Hynek VIGNON](https://fr.linkedin.com/in/hynek-vignon-a86984ba) @K3nyh: idées et conceptions originales, partie pédagogique médiathèque de Biarritz (2017, 2018)
+- [Raphaël OLLANDO](https://www.linkedin.com/in/ollando-raph/) @Resethel: idée original, programmation
+- [Floran PAULIN](https://fr.linkedin.com/in/paulinflorent) @FlorentUAV: programmation interface sur mobile, connection Bluetooth
+- [Flavien DUMAS](https://www.linkedin.com/in/flavien-dumas/) @Aldhra: portage sur MBlock, atelier pédagogique médiathèque de Biarritz (2018, 2019)
+- Adrien @adriengauche: suivi du projet
 
 # License
 Thanks to [Otto DIY](https://github.com/OttoDIY) project.
